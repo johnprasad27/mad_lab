@@ -1,0 +1,74 @@
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/summaryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking Summary"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/summaryCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer:"
+        app:layout_constraintTop_toBottomOf="@id/summaryTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/summaryMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movie:"
+        app:layout_constraintTop_toBottomOf="@id/summaryCustomer"
+        app:layout_constraintStart_toStartOf="@id/summaryCustomer"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/summarySeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seat:"
+        app:layout_constraintTop_toBottomOf="@id/summaryMovie"
+        app:layout_constraintStart_toStartOf="@id/summaryCustomer"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/summaryTickets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Tickets:"
+        app:layout_constraintTop_toBottomOf="@id/summarySeat"
+        app:layout_constraintStart_toStartOf="@id/summaryCustomer"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/summaryAddons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add-ons:"
+        app:layout_constraintTop_toBottomOf="@id/summaryTickets"
+        app:layout_constraintStart_toStartOf="@id/summaryCustomer"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/summaryTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grand Total:"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/summaryAddons"
+        app:layout_constraintStart_toStartOf="@id/summaryCustomer"
+        android:layout_marginTop="35dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
